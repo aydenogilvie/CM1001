@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Initifilasise page and declares the language of the website is English !-->
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <!-- Links the CSS page to the html code !-->
+   <link rel="stylesheet" type="text/css" href="styles.css" />
+   <title>Ayden's website - Contact Me</title>
+ </head>
+ <body>
+  <main role="main">
+    <div id="page">
+        <div id="header">
+        	<div class="title">Ayden Ogilvie</div>
+            <div class="subText">Web Developer</div>
+        </div>
+        <div id="bar" alt="naviagation bar">
+            <div class="menu"><a href="index.html">Home</a></div>
+            <div class="menu"><a href="currentprojects.html">Projects</a></div>
+            <div class="menu"><a href="cv.html">My CV</a></div>
+            <div class="menu"><a href="contactme.html">Contact Me</a></div>
+            <div class="menu"><a href="intrests.html">Intrests</a></div>
+        </div>
+        <!-- section1 Splits the content into 1 section whivh just holds the form !-->
+        <section1 id="contact">
+          <h1>Contacting Me</h1>
+          <!-- CSS style to take inputs from users for enquires and to decorate the page!-->
+          <style>
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+
+            input[type=submit] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+          </style>
+          <!-- HTML form to submit enquiries to myself and contact me!-->
+          <div class="html form">
+            <form action="/contactme.html">
+              <label for="name">Full Name</label>
+              <input type="text" id="fname" name="fullname" placeholder="Your Fullname">
+              <label for="lname">Last Name</label>
+              <input type="text" id="email" name="email" placeholder="Your Email Address">
+              <label for="Enquiry">Enquiry</label>
+              <textarea id="Enquiry" name="Enquiry" placeholder="Type Your Enquiry Here" style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <!-- End of section 1!-->
+      </section1>
+    </main>
+    <!-- Footer starts and uses CSS fule to apply attributes to it !-->
+      <footer>
+        <div id="footer" alt="footer reserving the rights of my webpage to me">Copyright of Ayden Ogilvie 2017</a></div>
+        <!-- End of Footer !-->
+      </footer>
+      <!-- End of body !-->
+    </body>
+  </html>
